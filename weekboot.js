@@ -2,7 +2,7 @@ const readline = require('readline');
 
 
 var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-var letters = ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F", ":"];
+var letters = ["a", "b", "c", "d", "e", "f", "A", "B", "C", "D", "E", "F", ":", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 let val = [];
 
 
@@ -19,6 +19,7 @@ rl.question('Enter your DVR MAC address 4 last digits =>  00:00:00:00:', (answer
             break
         }
         else if(!letters.includes(answer[p])){
+            //console.log(answer[p]);
             console.log("Error! Letter not found in Hexagecimal notation");
             break
         }
@@ -53,6 +54,7 @@ rl.question('Enter your DVR MAC address 4 last digits =>  00:00:00:00:', (answer
         }           
     }
 
+    //console.log(val);
 
 
     
