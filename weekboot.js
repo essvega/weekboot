@@ -46,9 +46,26 @@ rl.question('Enter your DVR MAC address 4 last digits =>  00:00:00:00:', (answer
             //console.log(hourt, dayt);
             //[0] - hour, [1] - days
             if(hourt > 12){
+                
+                console.log("**********************");
+                console.log("");
                 console.log(`Your DVR will reboot at: ${hourt - 12}:00 PM on ${days[dayt]}`);
+                console.log("");                
+                console.log("**********************");
+
+                console.log("**********************");
+                console.log("*  Powered by Essiel *");
+                console.log("**********************");
             }else{
+                
+                console.log("**********************");
+                console.log("");
                 console.log(`Your DVR will reboot at: ${hourt}:00 AM on ${days[dayt]}`);
+                console.log("");                
+                console.log("**********************");
+                console.log("**********************");
+                console.log("*  Powered by Essiel *");
+                console.log("**********************");
             }
 
         }           
