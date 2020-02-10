@@ -15,7 +15,7 @@ rl.question('Enter your DVR MAC address 4 last digits =>  00:00:00:00:', (answer
 
     for(let p = 0; p < answer.length; p++){
         if(answer.length != 5 | answer[2] != ":"){
-            console.log("Error!! Wrong input format");
+            console.log("Error!! Wrong input format. Please follow the structure 'FF:FF'");
             break
         }
         else if(!letters.includes(answer[p])){
@@ -63,6 +63,7 @@ rl.question('Enter your DVR MAC address 4 last digits =>  00:00:00:00:', (answer
                 console.log(`Your DVR will reboot at: ${hourt}:00 AM on ${days[dayt]}`);
                 console.log("");                
                 console.log("**********************");
+                
                 console.log("**********************");
                 console.log("*  Powered by Essiel *");
                 console.log("**********************");
